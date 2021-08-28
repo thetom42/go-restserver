@@ -12,4 +12,8 @@ LABEL quay.expires-after=27w
 
 USER root
 
-COPY --from=build /temp/cmd/go-webserver/go-webserver /usr/local/bin
+COPY --from=build /temp/cmd/go-restserver/go-restserver /usr/local/bin
+
+EXPOSE 1323
+
+ENTRYPOINT ["go-restserver"]
