@@ -1,4 +1,4 @@
-FROM golang:1.16 AS build
+FROM golang:1.16.4 AS build
 LABEL quay.expires-after=1h
 
 USER root
