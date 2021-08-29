@@ -1,0 +1,1 @@
+docker run -d -p 2323:1323 --name gr go-restserver:0.1
